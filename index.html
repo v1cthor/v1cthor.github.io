@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+    <img src="images/Vector.png" class="vector">
+    <div class="principal">
+
+
+        <div>
+            <textarea class="txtInput" placeholder="Ingrese el texto aqui" id="textoEncriptar" cols="35"
+                rows="5"></textarea>
+            <!-- <input type="text" class="txtInput" placeholder="Ingrese el texto aqui"> -->
+        </div>
+
+        <div>
+            <label class="text"><img src="images/Simbol.png" alt=""> Solo letras minusculas y sin acentos</label><br>
+            <div class="buttons">
+                <button class="btnEncriptar" onclick="encriptar()"><label
+                        class="textbtnEncriptar">Encriptar</label></button>
+                <button class="btnDesencriptar" onclick="desEncriptar()"><label
+                        class="textbtnDesencriptar">Desencriptar</label></button>
+            </div>
+
+        </div>
+
+        <div class="resultado">
+            <textarea id="txtEncriptados" class="mensaje txtInputEncriptado" name="mensaje" cols="23" rows="5" style="display:none;"></textarea>
+            <div id="flotante">
+                <img src="images/Muñeco.png" class="muneco">
+                <label id="txterror">Ningún mensaje fue encontrado</label><br><br>
+                <label id="txtinfo">Ingresa el texto que desees encriptar o desencriptar.</label>
+            </div>
+
+            <button id="btnCopiarH" class="btnCopiar" style="display:none;" onclick="copiarTexto()"><label class="textbtnCopiar">Copiar</label></button>
+        </div>
+    </div>
+    <script src="aplication.js"></script>
+
+
+</body>
+
+</html>
